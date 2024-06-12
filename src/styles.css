@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(182, 222, 241);
+  }
+  
+  body {
+    font-family:'Times New Roman', Times, serif ;
+    background-color: #f4f4f9;
+    color: #333;
+   
+  }
+  
+  .app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:60px;
+  }
+  
+  .dashboard {
+    margin-top: 20px;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .filter-container input {
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .filter-container button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #ea7491;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .filter-container button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  .treatment-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .treatment-list li {
+    padding: 2px;
+    border: 4px solid rgb(182, 222, 241);;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #666664;
+    border-radius: 4px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .treatment-list li:hover {
+    background-color: #fefff9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .treatment-info, .add-treatment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #d2b6b6;
+    transition: transform 0.3s;
+  }
+  
+  .treatment-info:hover, .add-treatment-form:hover {
+    transform: scale(1.05);
+  }
+  
+  .add-treatment-form {
+   
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(145deg, #211d14, #47110c);
+  }
+  
+  .add-treatment-form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-treatment-form form div {
+    margin-bottom: 10px;
+  }
+  
+  .add-treatment-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-treatment-form input, .add-treatment-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  .add-treatment-form input:focus, .add-treatment-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .add-treatment-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .add-treatment-form button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #007B9E;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .filter-container {
+      flex-direction: column;
+    }
+  
+    .filter-container input, .filter-container button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .treatment-list li {
+      font-size: 14px;
+    }
+  }
+  
